@@ -1,0 +1,150 @@
+
+
+.navbar-container {
+  padding: 0 9vw;
+  padding-top: 2vw;
+  display: flex;
+  height: 5vh;
+}
+
+.navbar-left-container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+}
+
+.navbar-text {
+  color: #d4d4d4;
+  font-family: var(--font-family);
+  margin-right: 4vw;
+  font-size: 1vw;
+  font-weight: 200;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-shopping-logo {
+  height: 2vw;
+  cursor: pointer;
+}
+
+.navbar-middle-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 2vw;
+}
+
+.navbar-right-container {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  align-items: center;
+}
+
+.navbar-mobile-menu {
+  display: none;
+  align-items: center;
+}
+
+.navbar-container {
+  position: relative;
+}
+
+.navbar-mobile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  
+  background-color: rgba(85, 2, 113, 0.9);
+  padding: 1rem;
+  position: absolute;
+  top: 17vw;
+  left: 1vw;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+
+  width: 90%;
+}
+
+@media screen and (max-width: 481px) {
+  .navbar-left-container {
+    display: none;
+  }
+
+  .navbar-container {
+    padding-top: 5vw;
+  }
+  .navbar-mobile-menu {
+    display: flex;
+    flex: 1;
+  }
+
+  .navbar-text {
+    margin: 0;
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 2vw;
+  }
+
+  .navbar-logo {
+    height: 7vw;
+  }
+
+  .navbar-right-container{
+    align-items: end;
+  }
+  .navbar-shopping-logo {
+    height: 8vw;
+  }
+}
+
+
+@media screen and (min-width: 482px) and (max-width: 1024px) {
+  .navbar-left-container {
+    display: none;
+  }
+
+  .navbar-container {
+    padding-top: 3vw;
+  }
+  .navbar-mobile-menu {
+    display: flex;
+    flex: 1;
+  }
+
+  .navbar-text {
+    margin: 0;
+    font-size: 2vw;
+  }
+
+  .navbar-logo {
+    height: 6vw;
+  }
+
+  .navbar-right-container{
+    align-items: end;
+  }
+
+  .navbar-shopping-logo {
+    height: 5vw;
+  }
+
+  .navbar-mobile-container {
+    width: 94%;
+    top: 12vw;
+  }
+
+  .navbar-text {
+    font-size: 3vw;
+    font-weight: 400;
+    margin-bottom: 2vw;
+  }
+}

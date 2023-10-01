@@ -1,0 +1,93 @@
+.faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(circle at 0% 0%, rgba(85, 2, 113, 1) 0%, rgba(15, 4, 28, 1) 29%);
+  padding-top: 8vw;
+  padding-bottom: 5vw;
+}
+
+.faq-text {
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 3vw;
+  margin-bottom: 3vw;
+}
+
+.accordion-container {
+  width: 50vw
+}
+
+.arrow {
+  height: 0.9vw;
+}
+
+.item {
+  background: #1B1127;
+  color: white;
+  margin-bottom: 1vw;
+  font-size: 1.25vw;
+  padding: 1.5vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.content {
+  color: #d4d4d4;
+  font-size: 1vw;
+  padding: 0 3vw;
+  font-family: var(--font-family);
+  background-color: #271D33;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.15s cubic-bezier(0,1,0,1), padding 0.15s ease-in-out;
+  margin-bottom: 1vw;
+  border-radius: 5px;
+}
+
+.content.show {
+  height: auto;
+  padding: 1.5vw 3vw;
+
+  max-height: 9999px;
+  transition: all 0.15s cubic-bezier(1,0,1,0), padding 0.15s ease-in-out;
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .faq-container {
+    background: radial-gradient(circle at 100% 100%, rgba(85, 2, 113, 1) 0%, rgba(15, 4, 28, 1) 31%);
+  }
+
+  .faq-text {
+    font-size: 6vw;
+  }
+
+  .item {
+    font-size: 3.2vw;
+    padding: 3.5vw 5vw;
+  }
+
+  .accordion-container {
+    width: 80vw
+  }
+
+  .arrow {
+    height: 2.5vw;
+  }
+
+  .content {
+    font-size: 3vw;
+  }
+
+  .content.show {
+    padding: 3vw 4vw;
+  }
+}

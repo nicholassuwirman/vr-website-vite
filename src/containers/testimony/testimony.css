@@ -1,0 +1,129 @@
+.testimony-container {
+  background: radial-gradient(circle at 100% 0%, rgba(85, 2, 113, 1) 0%, rgba(15, 4, 28, 1) 35%);
+  height: 100vh;
+  padding: 0 9vw;
+  display: flex;
+}
+
+.testimony-container-left {
+  flex: 1;
+  padding-top: 10vw;
+  padding-right: 5vw;
+}
+
+.testimony-title{
+  color: white;
+  font-family: var(--font-family);
+  font-size: 3.2vw;
+  margin-right: 10vw;
+  font-weight: 600;
+  padding-bottom: 2.5vw;
+}
+
+.testimony-description {
+  color: #e3e3e3;
+  font-family: var(--font-family);
+  font-size: 1vw;
+  padding-bottom: 2vw;
+  margin-bottom: 1vw;
+}
+
+.testimony-button {
+  background-color: #141A31;
+  border: none;
+  height: 3.5vw;
+  width: 12vw;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 2.5vw;
+}
+
+.testimony-button-description {
+  color: #3DDEED;
+  margin-right: 0.8vw;
+  font-family: var(--font-family);
+  font-size: 1vw;
+}
+
+.testimony-arrow {
+  height: 1.3vw;
+}
+
+.testimony-group-image {
+  height: 3.7dvw;
+}
+
+.testimony-container-right {
+  flex: 1;
+  position: relative;
+  
+  padding-top: 7vw;
+}
+
+.testimony-image-jane {
+  height: 30vw;
+}
+
+.testimony-image-tweet {
+  position: absolute;
+  height: 15vw;
+  left: -50px;
+  bottom: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .testimony-container {
+    height: 205vw;
+    flex-direction: column;
+  }
+
+  .testimony-container-left {
+    padding-right: 0;
+  }
+
+  .testimony-title {
+    font-size: 7.3vw;
+    margin-bottom: 4vw;
+  }
+
+  .testimony-description {
+    font-size: 3.5vw;
+    margin-bottom: 5vw;
+    font-weight: 300;
+  }
+
+  .testimony-button {
+    height: 12vw;
+    width: 40vw;
+    margin-bottom: 7vw;
+  }
+
+  .testimony-arrow {
+    height: 5vw;
+    margin-left: 3vw;
+  }
+
+  .testimony-button-description {
+    font-size: 3.2vw;
+  }
+
+  .testimony-group-image {
+    height: 10vw;
+  }
+
+  .testimony-image-jane {
+    height: 64vw;
+  }
+
+  .testimony-image-tweet {
+    display: none;
+  }
+
+  .testimony-container-right {
+    flex: 2;
+    padding-top: 20vw;
+  }
+}
